@@ -18,8 +18,12 @@ class rope {
     }
     display() {
         var pointA = this.rope.bodyA.position
-        var pointC = this.rope.bodyB.position;
+        var pointB = this.rope.bodyB.position;
         strokeWeight(3);
-        line(pointA.x, pointA.y, pointC.x, pointC.y)
+        var anchor1Y = pointA.y
+        var anchor1X = pointA.x
+        var anchor2Y = pointB.y+this.offsetY
+        var anchor2X = pointB.x+this.offsetX
+        line(anchor1X, anchor1Y, anchor2X, anchor2Y)
     }
 }

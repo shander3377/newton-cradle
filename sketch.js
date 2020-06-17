@@ -17,17 +17,17 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 
-	blob1 = new blob(350, 450, 20)
-	blob2 = new blob(370, 450, 20)
-	blob3 = new blob(390, 450, 20)
-	blob4 = new blob(410, 450, 20)
-	blob5 = new blob(460, 450, 20)
+	blob1 = new blob(140, 350, 20)
+	blob2 = new blob(160, 350, 20)
+	blob3 = new blob(180, 350, 20)
+	blob4 = new blob(200, 350, 20)
+	blob5 = new blob(220, 350, 20)
 	ground1 = new ground(width / 2, 50, 800, 20)
-	rope1 = new rope(blob1.body, ground1.body, -80, -0);
-	rope2 = new rope(blob2.body, ground1.body, -60, 0);
-	rope3 = new rope(blob3.body, ground1.body, -40, 0);
-	rope4 = new rope(blob4.body, ground1.body,   -20, 0);
-	rope5 = new rope(blob5.body, ground1.body, 0, 0);
+	rope1 = new rope(blob1.body, ground1.body, -200, 10);
+	rope2 = new rope(blob2.body, ground1.body, -180, 10);
+	rope3 = new rope(blob3.body, ground1.body, -160, 10);
+	rope4 = new rope(blob4.body, ground1.body,   -140, 10);
+	rope5 = new rope(blob5.body, ground1.body, -120, 10);
 
 	//packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:1.5, isStatic:false});
 	//World.add(world, packageBody);
